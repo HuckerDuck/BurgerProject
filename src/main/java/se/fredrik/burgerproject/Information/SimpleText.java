@@ -6,9 +6,11 @@ public class SimpleText {
 
     public static void pickDirection(){
         System.out.println();
-        System.out.println(Bright_Blue+ "You're right now in the Living Room ");
         waitTimer(1000);
-        System.out.println(RED + "1: Enter the Go ");
+        System.out.println(Bright_Blue+ "You're right now in the Living Room ");
+        System.out.println("");
+        waitTimer(1000);
+        System.out.println(RED + "1: Enter the Kitchen ");
         waitTimer(500);
         System.out.println(BLUE + "2: Enter the Hallway ");
         waitTimer(500);
@@ -16,7 +18,7 @@ public class SimpleText {
         waitTimer(500);
         System.out.println(GREEN + "4: Enter the Office ");
         waitTimer(500);
-        System.out.println(Bright_Blue + "\n6: Quit - You are to afraid and chicken out");
+        System.out.println(Bright_Blue + "5: Quit ");
         waitTimer(500);
     }
 
@@ -35,9 +37,9 @@ public class SimpleText {
     }
 
     public static void startOfLiving(){
-        System.out.println(BLUE + "Du vaknar upp av något konstigt ljud i badrummet");
-        System.out.println("Du är ensam hemma och du tror att någon är där...");
+        System.out.println(BLUE + "You are woken up by a strange sound");
+        System.out.println("You're alone but you think someone is in the house");
         waitTimer(1000);
-
     }
+
 }

@@ -1,17 +1,27 @@
 package se.fredrik.burgerproject.Directions;
 
+import se.fredrik.burgerproject.Charcters.Burglar;
+import se.fredrik.burgerproject.Charcters.Resident;
 import se.fredrik.burgerproject.Information.Colours;
 import se.fredrik.burgerproject.Tools.waitTimer;
 
-public class Bedroom{
-    public static void Go(){
-        System.out.println();
-        System.out.println(Colours.RED + "Go \n");
-        System.out.println("You look around..");
+public class Bedroom implements RoomManager {
+    @Override
+    public void enter(Resident resident, Burglar burglar) {
+        System.out.println("You enter the bedroom");
+        System.out.println("The bed looks nice and comfy");
+        System.out.println("You lie down and rest for a bit");
         waitTimer.waitTimer(1000);
-        System.out.println("Your in luck, you find a Frying Pan");
-        System.out.println("You call your Frying pan Klas");
+        System.out.println("Zzzz");
+        waitTimer.waitTimer(1000);
+        System.out.println("Zzzz");
+        waitTimer.waitTimer(1000);
+        System.out.println("Zzzz");
+        waitTimer.waitTimer(1000);
+        System.out.println();
+        System.out.println("You awake and go back to the Living Room");
+        waitTimer.waitTimer(1000);
+
 
     }
-
 }

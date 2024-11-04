@@ -1,6 +1,6 @@
 package se.fredrik.burgerproject.Charcters;
 
-public class Burgler extends Entity {
+public class Burglar extends Entity {
 
 
     public boolean isConscious() {
@@ -11,11 +11,11 @@ public class Burgler extends Entity {
     }
 
     //! Konstruktor med bestämda värden
-    public Burgler(String role, int health, int damage) {
+    public Burglar(String role, int health, int damage) {
         super(role, health, damage);
         this.health = 12;
         this.damage = 4;
-        this.role="Burgler";
+        this.role="Burglar";
     }
 
 

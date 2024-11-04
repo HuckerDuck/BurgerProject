@@ -17,4 +17,10 @@ public class Resident extends Entity {
         this.damage = 3;
 
     }
+
+    public void addDamage(int damage) {
+        this.damage += damage;
+    }
+
+
 }
