@@ -2,7 +2,7 @@ package se.fredrik.burgerproject.Directions;
 
 import se.fredrik.burgerproject.Charcters.Burglar;
 import se.fredrik.burgerproject.Charcters.Resident;
-import se.fredrik.burgerproject.Tools.waitTimer;
+
 
 import static se.fredrik.burgerproject.Tools.waitTimer.waitTimer;
 
