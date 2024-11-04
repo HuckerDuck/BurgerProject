@@ -56,9 +56,9 @@ public class Office implements RoomManager {
         System.out.println(Colours.BLUE + "The police arrive at the house");
         waitTimer.waitTimer(1000);
         System.out.println();
-        System.out.println(Colours.BLUE + "The" + " " + Colours.GREEN +  "game" + " " + Colours.Bright_Blue  + "is" + " " + Colours.RED + "now" + " "+ Colours.WHITE + "over");
+        System.out.println("                 " + Colours.BLUE + "The" + " " + Colours.GREEN +  "game" + " " + Colours.Bright_Blue  + "is" + " " + Colours.RED + "now" + " "+ Colours.WHITE + "over");
         waitTimer.waitTimer(1000);
-        System.out.println(Colours.BLUE + "Thanks" + " " + Colours.GREEN + "for" + " " +  Colours.RED + "playing");
+        System.out.println("                 " + Colours.BLUE + "Thanks" + " " + Colours.GREEN + "for" + " " +  Colours.RED + "playing");
     }
 
     private void toAfraidToCallWhileBurglarIsAlive(){
