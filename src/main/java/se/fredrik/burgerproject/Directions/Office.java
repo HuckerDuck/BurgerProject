@@ -4,7 +4,6 @@ import se.fredrik.burgerproject.Charcters.Resident;
 import se.fredrik.burgerproject.Information.Colours;
 import se.fredrik.burgerproject.Tools.InputHandler;
 import se.fredrik.burgerproject.Tools.waitTimer;
-import static java.awt.Color.GREEN;
 import static se.fredrik.burgerproject.Information.Colours.RED;
 import static se.fredrik.burgerproject.Information.Colours.YELLOW;
 
