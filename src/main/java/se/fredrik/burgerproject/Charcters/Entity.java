@@ -16,7 +16,9 @@ abstract class Entity {
 
     //! Konkreta metoder för att undvika att dubblikera koden
     public void punch(Entity toPunch) {toPunch.takeHit(this.damage);}
-    public void takeHit(int damage) {this.health -= damage;}
+
+    public void takeHit(int damage) {
+        this.health -= damage;}
     public boolean isConscious() {if(health < 0 ){return true;}return false;}
     public int getHealth(){return health;};
     public void setHealth(int health){this.health = health;};

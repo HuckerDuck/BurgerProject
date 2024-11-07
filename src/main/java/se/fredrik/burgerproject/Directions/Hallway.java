@@ -55,7 +55,8 @@ public class Hallway implements RoomManager{
                 }
             }
 
-        }else{
+        }
+        else{
             System.out.println("The burglar lies dead on the floor");
             System.out.println();
             System.out.println("Maybe you should call the police?!?!?");

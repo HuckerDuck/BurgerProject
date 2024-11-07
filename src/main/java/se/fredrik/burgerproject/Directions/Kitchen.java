@@ -40,8 +40,11 @@ public class Kitchen implements RoomManager {
                 } else {
                     System.out.println("Invalid choice. Please enter 'yes' or 'no'.");
                 }
-            } while (!choice.equals("yes") && !choice.equals("no"));
-        } else {
+            }
+            while (!choice.equals("yes") && !choice.equals("no"));
+        }
+
+        else {
             System.out.println("The kitchen looks the same, but there's no frying pan here anymore.");
         }
     }

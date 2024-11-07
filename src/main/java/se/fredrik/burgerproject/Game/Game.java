@@ -22,9 +22,11 @@ public class Game {
             if (input.equalsIgnoreCase("enter")) {
                 SimpleText.startOfLiving();
                 livingRoom.enter(resident, burglar); // Starta spelet i vardagsrummet
+
             }
             else if (input.equalsIgnoreCase("exit")) {
                 running = false; // Avslutar spelet om spelaren väljer "exit"
+
             }
             else {
                 ErrorHandling.invalidChoice(); // Hanterar ogiltig inmatning
