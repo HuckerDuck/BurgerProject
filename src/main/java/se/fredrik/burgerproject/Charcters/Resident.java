@@ -20,5 +20,9 @@ public class Resident extends Entity {
         this.damage += damage;
     }
 
+    public void restoreToFullHealth(){
+        this.health = 12;
+    }
+
 
 }

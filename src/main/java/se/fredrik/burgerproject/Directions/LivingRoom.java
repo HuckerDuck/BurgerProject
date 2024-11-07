@@ -1,9 +1,8 @@
 package se.fredrik.burgerproject.Directions;
 import se.fredrik.burgerproject.Charcters.Burglar;
 import se.fredrik.burgerproject.Charcters.Resident;
+import se.fredrik.burgerproject.Information.ErrorHandling;
 import se.fredrik.burgerproject.Information.SimpleText;
-
-import static se.fredrik.burgerproject.Information.ErrorHandling.wrongChoice;
 import static se.fredrik.burgerproject.Tools.InputHandler.getUserInput;
 import static se.fredrik.burgerproject.Tools.waitTimer.waitTimer;
 
@@ -25,9 +24,12 @@ public class LivingRoom implements RoomManager {
                 case "2" -> hallway.enter(resident, burglar);
                 case "3" -> bedroom.enter(resident, burglar);
                 case "4" -> office.enter(resident, burglar);
-                case "5" -> running = false;
+                case "5" -> {
+                    SimpleText.choiceQuit();
+                    running = false;
+                }
                 default -> {
-                    wrongChoice();
+                    ErrorHandling.wrongChoice();
                     waitTimer(1000);
                 }
             }

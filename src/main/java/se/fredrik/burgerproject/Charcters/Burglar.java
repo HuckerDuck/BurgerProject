@@ -15,5 +15,9 @@ public class Burglar extends Entity {
         super(role, health, damage);
     }
 
+    public void restoreToFullHealth(){
+        this.health = 12;
+    }
+
 
 }

@@ -9,9 +9,10 @@ import se.fredrik.burgerproject.Tools.InputHandler;
 public class Game {
 
     //! Skapar en instans av LivingRoom
-    private static LivingRoom livingRoom = new LivingRoom();
+    LivingRoom livingRoom = new LivingRoom();
 
-    public static void start() {
+
+    public void start() {
         Resident resident = new Resident("Resident", 12 ,3);
         Burglar burglar = new Burglar("Burglar", 12 ,4);
         var running = true;

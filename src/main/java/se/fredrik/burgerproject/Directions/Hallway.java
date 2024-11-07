@@ -49,9 +49,16 @@ public class Hallway implements RoomManager{
 
                 //! Kontrollerar om resident är död
                 if (!resident.isConscious()) {
-                    System.out.println("The burglar knocked you out. Game over.");
-                    //! Avslutar spelet
-                    System.exit(0);
+                    System.out.println();
+                    System.out.println("The burglar knocked you out. He's dragging you out into the Living Room...");
+                    resident.restoreToFullHealth();
+                    burglar.restoreToFullHealth();
+                    waitTimer(2000);
+                    System.out.println("You feel rested and got full health back");
+                    waitTimer(1000);
+                    //! Avslutar loopen
+                    break;
+
                 }
             }
 

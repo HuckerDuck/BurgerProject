@@ -1,7 +1,6 @@
 package se.fredrik.burgerproject.Directions;
 import se.fredrik.burgerproject.Charcters.Burglar;
 import se.fredrik.burgerproject.Charcters.Resident;
-import se.fredrik.burgerproject.Information.Colours;
 import se.fredrik.burgerproject.Tools.InputHandler;
 import se.fredrik.burgerproject.Tools.waitTimer;
 
@@ -13,8 +12,8 @@ public class Kitchen implements RoomManager {
 
     @Override
     public void enter(Resident resident, Burglar burglar) {
-        System.out.println();
-        System.out.println(Colours.RED + "You enter the kitchen...\n");
+
+        System.out.println(RED + "You enter the kitchen...");
         waitTimer.waitTimer(1000);
 
         if (!foundFryingPan) {
@@ -36,7 +35,7 @@ public class Kitchen implements RoomManager {
                     //! Markera att stekpannan nu är tagen
                     foundFryingPan = true;
                 } else if (choice.equals("no")) {
-                    System.out.println("You don't like the frying pan..");
+                    System.out.println(RED + "You don't like the frying pan..");
                 } else {
                     System.out.println("Invalid choice. Please enter 'yes' or 'no'.");
                 }
@@ -45,7 +44,7 @@ public class Kitchen implements RoomManager {
         }
 
         else {
-            System.out.println("The kitchen looks the same, but there's no frying pan here anymore.");
+            System.out.println(RED + "The kitchen looks the same, but there's no frying pan here anymore.");
         }
     }
 }

@@ -35,6 +35,6 @@ class EntityTest {
         //! 15 - 7 = 8
         //! Så detta ska bli 8
 
-        assertEquals(9, resident.getHealth());
+        assertEquals(8, resident.getHealth());
     }
 }

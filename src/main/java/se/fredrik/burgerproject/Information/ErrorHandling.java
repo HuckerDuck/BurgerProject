@@ -6,18 +6,12 @@ public class ErrorHandling {
 
     //Metod för fel val
     public static void wrongChoice(){
-        System.out.println();
-        System.out.println();
-        System.out.println(BACKGROUND_YELLOW + BLACK + "Pick a number between 1-5");
-        System.out.println(RESET);
-
+        System.out.println("\n"+ "\n"+ Colours.GREEN + "Pick a number between 1-5");
     }
 
     public static void invalidChoice(){
-        System.out.println();
-        System.out.println(BACKGROUND_YELLOW + BLACK + "Invalid choice");
-        System.out.println(BACKGROUND_YELLOW + BLACK + "Please write Enter or Quit");
-        System.out.println(RESET);
+        System.out.println("\n" + Colours.GREEN + "Invalid choice");
+        System.out.println(Colours.GREEN + "Please write Enter or Quit");
         waitTimer(1000);
         System.out.println();
     }
