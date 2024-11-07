@@ -17,7 +17,7 @@ public class Office implements RoomManager {
         waitTimer.waitTimer(1000);
         System.out.println(Colours.YELLOW + "You see a phone");
         System.out.println();
-        if (isTheBurglarAlive(burglar)){
+        if (burglar.isConscious()){
             toAfraidToCallWhileBurglarIsAlive();
         }
 
@@ -31,14 +31,11 @@ public class Office implements RoomManager {
                 System.exit(0);
             } else if (choice.equals("no")) {
                 System.out.println(Colours.YELLOW + ("You don't use the phone and go back to the living room"));
-            } else {
+            }
+            else {
                 System.out.println(Colours.YELLOW + ("Invalid choice. Please enter 'yes' or 'no'."));
             }
         }
-    }
-
-    private boolean isTheBurglarAlive(Burglar burglar) {
-        return burglar.isConscious();
     }
 
     private void useThePhoneToCallThePolice() {
@@ -50,13 +47,20 @@ public class Office implements RoomManager {
         System.out.println("2");
         waitTimer.waitTimer(1000);
         System.out.println("Hello, this is the police");
-        System.out.println(GREEN + "Yes, a burglar came into my house and I killed him");
+        System.out.println(Colours.GREEN + "Yes, a burglar came into my house and I killed him");
         waitTimer.waitTimer(1000);
-        System.out.println(GREEN + "Send for police and ambulance please");
-        System.out.println(GREEN + "Quickly");
+        System.out.println("Send for police and ambulance please");
+        System.out.println("Quickly");
         System.out.println();
         waitTimer.waitTimer(2000);
         System.out.println(Colours.BLUE + "The police arrive at the house");
+        waitTimer.waitTimer(1000);
+        System.out.println("The police arrest you for murder");
+        System.out.println(Colours.GREEN + "It was self defence");
+        waitTimer.waitTimer(1000);
+        System.out.println(Colours.BLUE + "The police don't believe you");
+        waitTimer.waitTimer(1000);
+        System.out.println(Colours.GREEN + "You are put in jail");
         waitTimer.waitTimer(1000);
         System.out.println();
         System.out.println("                 " + Colours.BLUE + "The" + " " + Colours.GREEN +  "game" + " " + Colours.BLUE  + "is" + " " + RED + "now" + " "+ Colours.WHITE + "over");

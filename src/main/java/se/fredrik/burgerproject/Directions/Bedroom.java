@@ -23,6 +23,9 @@ public class Bedroom implements RoomManager {
         System.out.println(Colours.YELLOW + "Zzzz");
         System.out.println();
         waitTimer.waitTimer(1000);
+        System.out.println("You feel rested and stronger at the same time");
+        waitTimer.waitTimer(1000);
+        resident.addDamage(1);
         System.out.println();
         System.out.println(Colours.YELLOW + "You awake and go back to the Living Room");
         waitTimer.waitTimer(1000);

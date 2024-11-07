@@ -25,6 +25,7 @@ public class Kitchen implements RoomManager {
                 choice = InputHandler.getUserInput().toLowerCase();
 
                 if (choice.equals("yes")) {
+                    System.out.println();
                     System.out.println("You take the frying pan in your hand and feel stronger.");
                     System.out.println("You exit the kitchen and go back to the living room");
                     waitTimer.waitTimer(1000);

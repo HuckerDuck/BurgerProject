@@ -34,8 +34,8 @@ public class SimpleText {
     }
 
     public static void startOfLiving(){
-        System.out.println("\n" + Colours.BLUE + "You are woken up by a strange sound");
-        System.out.println("\n" + Colours.BLUE + "You're alone but you think someone is in the house");
+        System.out.println("\n" + Colours.RED + "You are woken up by a strange sound");
+        System.out.println("\n" + Colours.RED + "You're alone but you think someone is in the house");
         waitTimer(1000);
     }
 
