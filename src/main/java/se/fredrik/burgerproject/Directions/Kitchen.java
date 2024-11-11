@@ -2,7 +2,7 @@ package se.fredrik.burgerproject.Directions;
 import se.fredrik.burgerproject.Charcters.Burglar;
 import se.fredrik.burgerproject.Charcters.Resident;
 import se.fredrik.burgerproject.Tools.InputHandler;
-import se.fredrik.burgerproject.Tools.waitTimer;
+import se.fredrik.burgerproject.Tools.waitTool;
 
 import static se.fredrik.burgerproject.Information.Colours.RED;
 
@@ -14,7 +14,7 @@ public class Kitchen implements RoomManager {
     public void enter(Resident resident, Burglar burglar) {
 
         System.out.println(RED + "You enter the kitchen...");
-        waitTimer.waitTimer(1000);
+        waitTool.waitTimer(1000);
 
         if (!foundFryingPan) {
             System.out.println("You spot a frying pan. Do you want to pick it up? (yes/no)");
@@ -28,7 +28,7 @@ public class Kitchen implements RoomManager {
                     System.out.println();
                     System.out.println("You take the frying pan in your hand and feel stronger.");
                     System.out.println("You exit the kitchen and go back to the living room");
-                    waitTimer.waitTimer(1000);
+                    waitTool.waitTimer(1000);
 
                     //! Öka damagen på resident
                     resident.addDamage(3);

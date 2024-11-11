@@ -4,14 +4,14 @@ import se.fredrik.burgerproject.Charcters.Resident;
 import se.fredrik.burgerproject.Information.ErrorHandling;
 import se.fredrik.burgerproject.Information.SimpleText;
 import static se.fredrik.burgerproject.Tools.InputHandler.getUserInput;
-import static se.fredrik.burgerproject.Tools.waitTimer.waitTimer;
+import static se.fredrik.burgerproject.Tools.waitTool.waitTimer;
 
 public class LivingRoom implements RoomManager {
     //! Instanser av alla rum
     Kitchen kitchen = new Kitchen();
     Hallway hallway = new Hallway();
     Bedroom bedroom = new Bedroom();
-    Office office = new Office();
+    Office   office = new Office();
 
 
     public void enter(Resident resident, Burglar burglar) {

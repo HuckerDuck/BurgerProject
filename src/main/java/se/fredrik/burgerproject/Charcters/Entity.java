@@ -19,9 +19,16 @@ abstract class Entity {
 
     public void takeHit(int damage) {
         this.health -= damage;}
-    public boolean isConscious() {if(health < 0 ){return true;}return false;}
-    public int getHealth(){return health;};
-    public void setHealth(int health){this.health = health;};
-    public String getRole(){return this.role;};
-    public void setRole(String role){this.role = role;};
+    public boolean isConscious()
+    {
+        if (health > 0)
+        {
+            //! Personen är vid liv
+            return true;
+        }
+        //* Personen är död
+        return false;
+    }
+    public int getHealth(){return health;}
+    public void setHealth(int health){this.health = health;}
 }

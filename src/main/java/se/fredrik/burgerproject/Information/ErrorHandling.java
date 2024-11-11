@@ -1,6 +1,5 @@
 package se.fredrik.burgerproject.Information;
-import static se.fredrik.burgerproject.Information.Colours.*;
-import static se.fredrik.burgerproject.Tools.waitTimer.waitTimer;
+import static se.fredrik.burgerproject.Tools.waitTool.waitTimer;
 
 public class ErrorHandling {
 

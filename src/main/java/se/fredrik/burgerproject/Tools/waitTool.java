@@ -1,6 +1,6 @@
 package se.fredrik.burgerproject.Tools;
 
-public class waitTimer {
+public class waitTool {
     public static void waitTimer(int ms) {
         try {
             Thread.sleep(ms);

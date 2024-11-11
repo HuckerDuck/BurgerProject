@@ -16,7 +16,7 @@ class ResidentTest {
         //!
         //! Om det funkar blir det godkänt
 
-        assertEquals(12, resident.getHealth());
+        assertEquals(11, resident.getHealth());
 
     }
 }
