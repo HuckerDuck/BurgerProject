@@ -4,7 +4,6 @@ import se.fredrik.burgerproject.Charcters.Resident;
 import se.fredrik.burgerproject.Information.ErrorHandling;
 import se.fredrik.burgerproject.Information.SimpleText;
 import static se.fredrik.burgerproject.Tools.InputHandler.getUserInput;
-import static se.fredrik.burgerproject.Tools.waitTool.waitTimer;
 
 public class LivingRoom implements RoomManager {
     //! Instanser av alla rum
@@ -12,7 +11,6 @@ public class LivingRoom implements RoomManager {
     Hallway hallway = new Hallway();
     Bedroom bedroom = new Bedroom();
     Office   office = new Office();
-
 
     public void enter(Resident resident, Burglar burglar) {
         boolean running = true;
@@ -23,17 +21,13 @@ public class LivingRoom implements RoomManager {
                 case "1" -> kitchen.enter(resident, burglar);
                 case "2" -> hallway.enter(resident, burglar);
                 case "3" -> bedroom.enter(resident, burglar);
-                case "4" -> office.enter(resident, burglar);
+                case "4" -> office.enter (resident, burglar);
                 case "5" -> {
                     SimpleText.choiceQuit();
                     running = false;
                 }
-                default -> {
-                    ErrorHandling.wrongChoice();
-                    waitTimer(1000);
-                }
+                default -> ErrorHandling.wrongChoice();
             }
         }
-
     }
 }

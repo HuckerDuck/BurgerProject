@@ -33,6 +33,7 @@ public class Kitchen implements RoomManager {
                     //! Öka damagen på resident
                     resident.addDamage(3);
 
+
                     //! Markera att stekpannan nu är tagen
                     foundFryingPan = true;
                 } else if (choice.equals("no")) {

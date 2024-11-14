@@ -15,7 +15,7 @@ public class Game {
     public void start() {
         Resident resident = new Resident("Resident", 12 ,3);
         Burglar burglar = new Burglar("Burglar", 12 ,4);
-        var running = true;
+        boolean running = true;
 
         while (running) {
             SimpleText.welcomeMenu();

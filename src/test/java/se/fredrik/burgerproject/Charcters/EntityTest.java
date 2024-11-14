@@ -37,4 +37,24 @@ class EntityTest {
 
         assertEquals(8, resident.getHealth());
     }
+
+    @Test
+    void isConscious() {
+        Resident resident = new Resident("Resident", 5, 5);
+
+        //! Testa om jag lever
+        //! Denna kollar om livet är mer än 0
+        //! Är livet mindre eller lika med 0 så lyckas inte testet
+
+        assertTrue(resident.isConscious());
+
+        //! Vi testar att sätta hp:t till 0 och ser om vi får ett falskt resultat istället
+        //!
+        //! Denna bör fungera... Vilket det också gör
+
+        resident.setHealth(0);
+        assertFalse(resident.isConscious());
+
+
+    }
 }

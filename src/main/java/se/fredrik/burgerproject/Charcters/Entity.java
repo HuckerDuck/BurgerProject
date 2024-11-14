@@ -15,7 +15,8 @@ abstract class Entity {
     }
 
     //! Konkreta metoder för att undvika att dubblikera koden
-    public void punch(Entity toPunch) {toPunch.takeHit(this.damage);}
+    public void punch(Entity toPunch) {
+        toPunch.takeHit(this.damage);}
 
     public void takeHit(int damage) {
         this.health -= damage;}

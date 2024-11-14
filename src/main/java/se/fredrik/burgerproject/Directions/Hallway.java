@@ -12,6 +12,7 @@ public class Hallway implements RoomManager{
 
     @Override
     public void enter(Resident resident, Burglar burglar) {
+        String choice;
         if(burglar.isConscious()){
             System.out.println(Colours.WHITE + "You enter the hallway and see a person");
             System.out.println(Colours.WHITE + "HE'S THE BURGLAR");
@@ -41,17 +42,18 @@ public class Hallway implements RoomManager{
                     break;
                 }
 
-                // Tjuven attackerar spelaren
+                //! Tjuven attackerar spelaren
                 burglar.punch(resident);
                 System.out.println();
                 System.out.println(Colours.BLUE + "The burglar hit you");
                 System.out.println(Colours.BLUE + "Your health is now" + " " + burglar.getHealth());
                 waitTimer(1000);
 
-                //! Kontrollerar om resident är död
+                //! Kontrollerar om resident lever eller inte
                 if (!resident.isConscious()) {
                     System.out.println();
-                    System.out.println(Colours.BLUE + "The burglar knocked you out. He's dragging you out into the Living Room...");
+                    System.out.println(Colours.BLUE + "The burglar knocked you out. " +
+                                                       "He's dragging you out into the Living Room...");
                     resident.restoreToFullHealth();
                     burglar.restoreToFullHealth();
                     waitTimer(2000);
@@ -64,6 +66,7 @@ public class Hallway implements RoomManager{
             }
 
         }
+
         else{
             System.out.println("The burglar lies dead on the floor");
             System.out.println();
